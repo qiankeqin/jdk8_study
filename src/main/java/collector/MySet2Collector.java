@@ -19,7 +19,11 @@ public class MySet2Collector<T> implements Collector<T,Set<T>,Map<T,T>> {
     public Supplier<Set<T>> supplier() {
         System.out.println("supplier invoked!");
 //        return ()->new HashSet<>();
-        return HashSet<T>::new;
+//        return HashSet<T>::new;
+        return ()->{
+            System.out.println("create supplier!");
+            return new HashSet<>();
+        };
     }
 
     @Override
@@ -37,6 +41,8 @@ public class MySet2Collector<T> implements Collector<T,Set<T>,Map<T,T>> {
     public BinaryOperator<Set<T>> combiner() {
         System.out.println("combiner invoked!");
         return (set1,set2)->{
+            System.out.println("set1:"+set1);
+            System.out.println("set2:"+set2);
             set1.addAll(set2);
             return set1;
         };
@@ -56,23 +62,20 @@ public class MySet2Collector<T> implements Collector<T,Set<T>,Map<T,T>> {
     @Override
     public Set<Characteristics> characteristics() {
         System.out.println("characteristics invoked!");
-        return Collections.unmodifiableSet(EnumSet.of(Characteristics.UNORDERED,Characteristics.CONCURRENT));
+        return Collections.unmodifiableSet(EnumSet.of(Characteristics.UNORDERED));
     }
 
     public static void main(String[] args) {
         List<String> list = Arrays.asList("hello","world","hello world","hello","a","b","c","d","3","f");
 
+        System.out.println("processors:"+Runtime.getRuntime().availableProcessors());
 
-        for(int i=0;i<100;i++){
+        Set<String> set = new HashSet<>();
+        set.addAll(list);
+        System.out.println("set:"+set);
 
-            Set<String> set = new HashSet<>();
-            set.addAll(list);
-            System.out.println("set:"+set);
+        Map<String, String> map = set.parallelStream().collect(new MySet2Collector<>());
 
-            Map<String, String> map = set.parallelStream().collect(new MySet2Collector<>());
-
-            System.out.println("map:"+map);
-        }
-
+        System.out.println("map:"+map);
     }
 }
