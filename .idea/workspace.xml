@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="966c1133-b1fc-4036-8cd8-18a3bcc9e7e1" name="Default" comment="" />
+    <list default="true" id="966c1133-b1fc-4036-8cd8-18a3bcc9e7e1" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java" afterPath="$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -56,9 +58,11 @@
       <file leaf-file-name="StreamTest1.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="300">
+              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -522,11 +526,11 @@
         <option value="$PROJECT_DIR$/src/main/java/stream/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/stream/StreamTest14.java" />
         <option value="$PROJECT_DIR$/src/main/java/stream2/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java" />
         <option value="$PROJECT_DIR$/src/main/java/stream2/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/comparatordemo/MyComparatorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/collector/MySetCollector.java" />
         <option value="$PROJECT_DIR$/src/main/java/collector/MySet2Collector.java" />
+        <option value="$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java" />
       </list>
     </option>
   </component>
@@ -536,7 +540,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="43" />
     <option name="y" value="23" />
     <option name="width" value="1397" />
@@ -928,7 +932,7 @@
       <workItem from="1535033526371" duration="4601000" />
       <workItem from="1535086817080" duration="2397000" />
       <workItem from="1536729320665" duration="1153000" />
-      <workItem from="1539829287253" duration="1206000" />
+      <workItem from="1539829287253" duration="1373000" />
     </task>
     <task id="LOCAL-00001" summary="predicate:3个default&amp;1个static方法">
       <created>1532766561383</created>
@@ -962,7 +966,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84997000" />
+    <option name="totallyTimeSpent" value="85164000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -974,7 +978,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="23" width="1397" height="877" extended-state="0" />
+    <frame x="43" y="23" width="1397" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1425,9 +1429,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/stream2/StreamTest1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

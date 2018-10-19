@@ -18,8 +18,10 @@ public class StreamTest1 {
         Student stu3 = new Student("wangwu",100);
         Student stu4 = new Student("zhaoliu",90);
         Student stu5 = new Student("zhaoliu",90);
+        Student stu6 = new Student("zhaoliu1",100);
 
-        List<Student> list = Arrays.asList(stu1,stu2,stu3,stu4,stu5);
+
+        List<Student> list = Arrays.asList(stu1,stu2,stu3,stu4,stu5,stu6);
 
 //        List<Student> student1 = list.stream().collect(Collectors.toList());
 //        //student1.forEach(System.out::println);
